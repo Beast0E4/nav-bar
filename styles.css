@@ -1,0 +1,90 @@
+header{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    background-color: black;
+}
+.menu{
+    display: none;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.options{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.options li{
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+}
+.options li img{
+    height: 100%;
+}
+.options li a{
+    font-family: 'DM Serif Display', serif;
+    color: aliceblue;
+    font-size: large;
+    text-decoration: none;
+}
+.options li a:hover{
+    scale: 1.2;
+    transition: 0.5s;
+}
+.enter{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.enter li{
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+}
+.enter li button{
+    font-family: 'DM Serif Display', serif;
+    font-size: medium;
+    color: aliceblue;
+    background-color: black;
+    border-color: aliceblue;
+    padding: 10%;
+    margin-right: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.enter li button:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+#login{
+    background: none;
+    border: none;
+}
+#signup{
+    border-radius: 5rem;
+}
+@media(max-width: 730px){
+    .options li a{
+        display: none;
+    }
+    .enter{
+        display: none;
+    }
+    .menu{
+        display:block;
+        width: 50px; height: 50px;
+    }
+    .menu:hover{
+        filter: grayscale(2.5);
+        transition:0.3;
+    }
+    .dropdown{
+        display: block;
+    }
+}
